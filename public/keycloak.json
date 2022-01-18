@@ -1,0 +1,22 @@
+// {
+//     "realm": "medicare",
+//     "auth-server-url": "http://192.168.29.2:8080/auth",
+//     "ssl-required": "external",
+//     "resource": "nodejs-microservice",
+//     "public-client": true,
+//     "confidential-port": 0
+// }
+
+{
+    "realm": "medicare",
+    "auth-server-url": "http://192.168.29.2:8080/auth/",
+    "ssl-required": "external",
+    "resource": "nodejs-microservice",
+    "verify-token-audience": true,
+    "credentials": {
+      "secret": "b636202f-7a32-40c9-bb63-23337c57cae4"
+    },
+    "use-resource-role-mappings": true,
+    "confidential-port": 0,
+    "policy-enforcer": {}
+  }

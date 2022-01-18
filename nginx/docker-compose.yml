@@ -1,0 +1,12 @@
+version: '1'
+services:
+  react:
+    container_name: hci-adminpanel
+    build:
+      context: .
+      dockerfile: 'adminpanel/Dockerfile'
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    command: ["npm", "start"]
